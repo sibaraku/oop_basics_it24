@@ -1,6 +1,6 @@
 const Person = require('./person')
 
-const bob = new Person()
+const bob = new Person('Bob')
 console.log(bob)
-console.log(`name: ` + bob.getName)
-console.log(`age: ${bob.getAge}`)
+console.log('name: ' + bob.getName())
+console.log(`age: ${bob.getAge()}`)
