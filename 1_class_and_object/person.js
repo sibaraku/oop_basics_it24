@@ -2,21 +2,37 @@ class Person{
     #name = ""
     #age = 0
 
-    constructor(name){
+    constructor(name) {
         this.#name = name
     } 
 
-    setName(name){
+    becomeOlder() {
+        this.#age += 1
+
+    }    
+
+    isAdult() {
+        if (this.#age < 18) {
+            return false 
+        } 
+        return true
+    } 
+
+    printPerson() {
+        console.log(this.#name + ', age ' + this.#age + ' years old')
+    } 
+
+    setName(name) {
         this.#name = name
     }
-    getName(){
+    getName() {
         return this.#name
     }
 
-    setAge(age){
+    setAge(age) {
         this.#age = age
     }
-    getAge(){
+    getAge() {
         return this.#age
     }
 }
