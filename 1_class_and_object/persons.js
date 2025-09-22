@@ -1,8 +1,8 @@
 const Person = require('./person')
 
-const bob = new Person('Bob')
-const brian = new Person('Brian')
-const alice = new Person('Alice')
+const bob = new Person('Bob', 70, 1.75)
+const brian = new Person('Brian', 72, 1.80)
+const alice = new Person('Alice', 60, 1.68)
 
 
 const persons = [bob, brian, alice]
@@ -30,9 +30,9 @@ persons.forEach(person => {
     } 
 })
 
-
-
-
+console.log(bob.getName() + ", BMI:", bob.getBMI());
+console.log(brian.getName() + ", BMI:", brian.getBMI());
+console.log(alice.getName() + ", BMI:", alice.getBMI());
 
 
 
